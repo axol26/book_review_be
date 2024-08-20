@@ -27,7 +27,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/.book_review-be:latest
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/book_review-be:latest
 
       - name: Execute curl command
         run: curl ${{ secrets.RENDER_API }}
