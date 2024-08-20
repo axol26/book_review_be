@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/books")
-@CrossOrigin(origins = "https://bookreview-t1vn.onrender.com")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class BookController {
     @Autowired
     private BookRepository bookRepository;
